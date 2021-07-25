@@ -1,0 +1,7 @@
+# Folders
+node_modules
+dist
+static
+
+# Local env files
+*.env
