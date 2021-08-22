@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js",
-    "dev": "nodemon src/index.ts",
+    "prod": "node dist/index.js",
+    "dev": "nodemon --exec 'node --loader ts-node/esm src/index.ts'",
     "build": "rm -rf dist && tsc",
     "clean": "rm -rf dist node_modules"
   },

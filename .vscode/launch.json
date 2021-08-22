@@ -9,8 +9,11 @@
                 "<node_internals>/**",
                 "${workspaceFolder}/node_modules/**"
             ],
-            "runtimeExecutable": "ts-node",
             "runtimeArgs": [
+                "--loader",
+                "ts-node/esm"
+            ],
+            "args": [
                 "${workspaceFolder}/src/index.ts"
             ]
         },
@@ -24,7 +27,10 @@
             ],
             "runtimeExecutable": "nodemon",
             "runtimeArgs": [
-                "${workspaceFolder}/src/index.ts"
+                "--exec"
+            ],
+            "args": [
+                "node --loader ts-node/esm src/index.ts"
             ]
         }
     ]
