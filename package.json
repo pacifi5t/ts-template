@@ -1,7 +1,7 @@
 {
-  "name": "ts-template",
+  "name": "",
   "version": "1.0.0",
-  "description": "Template for projects built with TypeScript",
+  "description": "",
   "main": "dist/index.js",
   "scripts": {
     "prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/index.js",
