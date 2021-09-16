@@ -27,10 +27,14 @@
             ],
             "runtimeExecutable": "nodemon",
             "runtimeArgs": [
-                "--exec"
+                "-x",
+                "node",
+                "--",
+                "--loader",
+                "ts-node/esm"
             ],
             "args": [
-                "node --loader ts-node/esm src/index.ts"
+                "${workspaceFolder}/src/index.ts"
             ]
         }
     ]

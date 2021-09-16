@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "prod": "node dist/index.js",
-    "dev": "nodemon --exec 'node --loader ts-node/esm src/index.ts'",
+    "dev": "nodemon -x node -- --loader ts-node/esm src/index.ts",
     "build": "rm -rf dist && tsc",
     "clean": "rm -rf dist node_modules"
   },
